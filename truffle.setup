@@ -1,0 +1,53 @@
+#Setup Truffle, deploy and interact with contracts
+
+#truffle.js
+http://truffleframework.com/docs/advanced/configuration
+module.exports = {
+  networks: {
+    development: {
+      host: "127.0.0.1",
+      port: 8545,
+      network_id: "*" // Match any network id
+    }
+  }
+};
+
+#Contract
+https://blog.zeppelin.solutions/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05
+truffle create contract ProofOfExistence1
+vim contracts/ProofOfExistence1.sol
+example Contract:
+pragma solidity ^0.4.15;
+// Proof of Existence contract, version 1
+contract ProofOfExistence1 {
+  // state
+  bytes32 public proof;
+  // calculate and store the proof for a document
+  // *transactional function*
+  function notarize(string document) {
+    proof = proofFor(document);
+  }
+  // helper function to get a document's sha256
+  // *read-only function*
+  function proofFor(string document) constant returns (bytes32) {
+    return sha256(document);
+  }
+}
+
+vim migrations/2_deploy_contracts.js
+example Deploy:
+var ProofOfExistence1 = artifacts.require("./ProofOfExistence1.sol");
+module.exports = function(deployer) {
+  deployer.deploy(ProofOfExistence1);
+};
+
+truffle migrate --reset
+->
+Running migration: 2_deploy_contracts.js
+  Replacing ProofOfExistence1...
+  ... 0x0026502673bb7859771f36ce8eb8001025fcad9ae66a850a98d6e3f43f16fadf
+  ProofOfExistence1: 0x6eff256b1f681a543fc2e55316d1ec9de70d46f2
+  Address = 0x6eff256b1f681a543fc2e55316d1ec9de70d46f2
+
+#abi, etc.
+vim build/contracts/ProofOfExistence1.json
