@@ -18,6 +18,7 @@ web3.eth.sendTransaction({'to': accs[1], 'from': accs[0], 'data': "ExampleData",
 #contract
 from web3.contract import ConciseContract
 #read json
+import json
 with open('abi.json', 'r') as abi_definition:
     abi = json.load(abi_definition)
 
