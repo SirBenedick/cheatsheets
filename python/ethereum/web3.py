@@ -4,7 +4,7 @@
 
 # connection to Blockchain
 from web3 import Web3, HTTPProvider, IPCProvider
-web3 = Web3(HTTPProvider('server:8545'))
+web3 = Web3(HTTPProvider('http://localhost:8545'))
 
 #accounts
 accs = web3.eth.accounts
