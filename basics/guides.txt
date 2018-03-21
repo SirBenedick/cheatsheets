@@ -2,3 +2,8 @@
 
 #git guide
 https://rogerdudler.github.io/git-guide/index.de.html
+
+#vim guide
+https://getintodevops.com/blog/how-the-hell-do-i-exit-a-beginners-guide-to-vim
+http://www.viemu.com/vi-vim-cheat-sheet.gif
+https://vim.rtorr.com
