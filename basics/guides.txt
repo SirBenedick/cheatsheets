@@ -2,6 +2,11 @@
 
 #git guide
 https://rogerdudler.github.io/git-guide/index.de.html
+pull
+add
+commit
+push
+
 
 #vim guide
 https://getintodevops.com/blog/how-the-hell-do-i-exit-a-beginners-guide-to-vim
