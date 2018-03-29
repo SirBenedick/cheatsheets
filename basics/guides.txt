@@ -1,0 +1,23 @@
+#guides
+
+#git guide
+https://rogerdudler.github.io/git-guide/index.de.html
+pull
+add
+commit
+push
+
+
+#vim guide
+https://getintodevops.com/blog/how-the-hell-do-i-exit-a-beginners-guide-to-vim
+http://www.viemu.com/vi-vim-cheat-sheet.gif
+https://vim.rtorr.com
+
+#facebook messenger
+https://www.sitepoint.com/building-facebook-chat-bot-node-heroku/
+
+#python - google docs
+https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-spreadsheet-in-python.html
+https://developers.google.com/sheets/api/quickstart/python
+https://github.com/burnash/gspread
+
