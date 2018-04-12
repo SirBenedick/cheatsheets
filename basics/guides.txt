@@ -24,3 +24,9 @@ https://github.com/burnash/gspread
 #Regular Expression
 https://docs.python.org/3/howto/regex.html
 https://regex101.com
+
+#screen
+http://raspi.tv/2012/using-screen-with-raspberry-pi-to-avoid-leaving-ssh-sessions-open
+ctr-a d detach
+ctr-d close
+screen -R reatach
