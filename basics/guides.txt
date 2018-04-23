@@ -34,3 +34,7 @@ screen -R reatach
 ##pip
 #remove all packages
 pip freeze | xargs pip uninstall -y
+
+##pi
+#cron
+https://www.raspberrypi.org/documentation/linux/usage/cron.md
