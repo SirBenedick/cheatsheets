@@ -30,3 +30,7 @@ http://raspi.tv/2012/using-screen-with-raspberry-pi-to-avoid-leaving-ssh-session
 ctr-a d detach
 ctr-d close
 screen -R reatach
+
+##pip
+#remove all packages
+pip freeze | xargs pip uninstall -y
