@@ -39,3 +39,7 @@ pip freeze | xargs pip uninstall -y
 #cron
 https://www.raspberrypi.org/documentation/linux/usage/cron.md
 screen -S screenname -X stuff "command\n"
+
+
+##virtualenv
+virtualenv exampleFodler -p path/to/python/version ("which python3")
