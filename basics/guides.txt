@@ -43,3 +43,5 @@ screen -S screenname -X stuff "command\n"
 
 ##virtualenv
 virtualenv exampleFodler -p path/to/python/version ("which python3")
+##python versions
+http://mattseymour.net/blog/2016/03/brew-installing-specific-python-version/
